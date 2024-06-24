@@ -11,3 +11,15 @@ export interface ILogItemProps {
   logMessage:string;
   logTimeStamp:string;
 }
+
+export interface IBoardProps {
+  boardId : string;
+  boardName:string;
+  lists : IListProps[]
+}
+
+export interface IListProps {
+  listId : string;
+  listName:string;
+  tasks :ITaskProps[]
+}
